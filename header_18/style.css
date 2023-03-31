@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar .navbar-brand {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.292683px;
+    color: #FFFFFF;
+}
+.navbar .navbar-brand:hover {
+    font-size: 26px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 5px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    font-size: 19px;
+    font-weight: 700;
+}
+nav .btn {
+    padding: 4px 20px;
+    background: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    color: #482BE7;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+nav .btn:hover {
+    background: #482BE7;
+    color: #FFFFFF;
+}
+.header {
+    background: url(images/header_bg.png);
+    background-color: #482BE7;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+}
+.header-section {
+    display: flex;
+    margin-top: 60px;
+    /* height: 100vh; */
+    flex-direction: column;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 264px 0 0; */
+}
+.hero-text h1 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.hero-text p{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.paragragh {
+    margin: 32px 0 ;
+}
+.header-cta-btn button{
+    padding: 14px 32px;
+    background: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    color: #482BE7;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+}
+.header-cta-btn .learn-more {
+    background: none;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    color: #FFFFFF;
+}
+.header-cta-btn button:hover {
+    background: #482BE7;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:768px) {
+    nav .btn {
+        margin-left: 0;
+        text-align: start;
+    }
+    .header {
+        background: #482BE7 !important;
+        height: 1200px;
+    }
+    .hero-text br {
+        display: none !important;
+    }
+    .hero-text h1 {
+        font-size: 52px;
+        line-height: 56px;
+        letter-spacing: -1px;
+    }
+    .hero-text p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .header-cta-btn button{
+        padding: 7px 22px;
+        /* display: block; */
+    }
+    .header-cta-btn button:hover {
+        background: #ffffff;
+        color: #482BE7;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header-cta-btn {
+        display: block;
+    }
+    .header-cta-btn button {
+        margin: 12px 0;
+
+    }
+}

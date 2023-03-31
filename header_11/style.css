@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar .navbar-brand {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.292683px;
+    color: #1E0E62;
+}
+.navbar .navbar-brand:hover {
+    font-size: 26px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1E0E62;
+    margin: 0 5px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    font-size: 20px;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+    opacity: 0.3;
+}
+nav .btn {
+    padding: 4px 22px;
+    background: #482BE7;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+nav .btn:hover {
+    background: #ffffff;
+    color: #482BE7;
+    font-size: 20px;
+    border: 1px solid #482BE7;
+}
+.header-section {
+    /* display: flex; */
+    margin-top: 60px;
+    /* height: 100vh; */
+    flex-direction: column;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 64px 155px 0 0;
+}
+
+.header .header-content h1 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: #1E0E62;
+    /* padding: 0 52px 0 0; */
+}
+.header .header-content p {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(21, 20, 57, 0.4);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    padding: 10px 0;
+}
+
+.header .cta {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.header .cta-text {
+    margin-left: 30px;
+}
+.header .cta-text a {
+    text-decoration: none;
+    color: #1E0E62;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+.header .cta-text a:hover {
+    font-size: 20px;
+}
+.cta-btn button {
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    text-align: center;
+    background: #25DAC5;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+.cta-btn button:hover {
+    background: #ffffff;
+    color: #25DAC5;
+    border: 1px solid #25DAC5;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .header .header-content h1 {
+        font-size: 48px;
+        line-height: 57px;
+    } 
+    .header .header-content p {
+        font-size: 18px;
+        line-height: 30px;
+    }   
+
+    .cta-btn button {
+        padding: 8px 24px;
+        font-size: 16px;
+    }
+    .header .cta-text a {
+        font-size: 16px;
+    }
+
+    .header-image img{
+        width: 400px;
+    }
+
+    .header-content {
+        padding: 64px 50px 0 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .header .row{
+        text-align: center;
+    }
+    .header .header-content {
+        padding: 0 44px;
+    }
+    .header .header-content h1 {
+        font-size: 48px;
+        line-height: 57px;
+    } 
+    .header .header-content h1 br {
+        display: none;
+    }
+    .header-image {
+        margin: 80px 0 0 0;
+    }
+    .header-image img{
+        width: 300px;
+    }
+    .header .cta {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .navbar .navbar-brand {
+        font-size: 22px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+    nav .btn {
+        font-size: 14px;
+    }
+    .nav-btn {
+        margin-left: -5px;
+    }
+    .header .header-content {
+        padding: 0 10px;
+    }
+    .header .header-content h1 {
+        font-size: 34px;
+        line-height: 37px;
+    } 
+    .header .header-content p {
+        font-size: 14px;
+        line-height: 22px;
+    } 
+    .header-image img{
+        width: 200px;
+    }
+    .header .cta {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .cta .cta-btn button {
+        padding: 4px 12px;
+        font-size: 14px;
+    }
+    .header .cta-text {
+        margin: 10px 0;
+    }
+    .header .cta-text a {
+        font-size: 14px;
+    }
+
+}
