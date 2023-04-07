@@ -9,7 +9,7 @@ body {
 .header-menu {
     background: #2F1893;
     height: auto;
-    padding: 100px;
+    padding-bottom: 100px;
 }
 
 nav .navbar-brand {
@@ -20,7 +20,10 @@ nav .navbar-brand {
     line-height: 36px;  
     color: #FFFFFF;
 }
-
+nav .navbar-brand:hover {
+    font-size: 25.5px;
+    transition: .5s;
+}
 
 nav .nav-item .nav-link {
     font-family: 'DM Sans', sans-serif;
@@ -30,6 +33,11 @@ nav .nav-item .nav-link {
     color: #FFFFFF;
     margin-right: 20px;
     
+}
+nav .nav-item .nav-link:hover {
+    font-size: 18.5px;
+    transition: .5s;
+
 }
 
 nav .navbar-toggler {
@@ -48,7 +56,7 @@ nav .btn {
 }
 
 .header-text h1, p {
-    margin-top: 82px;
+    margin-top: 64px;
     font-family: 'DM Sans', sans-serif;
     color: #FFFFFF;
     font-size: 72px;
@@ -59,11 +67,19 @@ nav .btn {
 
 @media screen and (max-width: 790px) {
     .header-text h1{
-        font-size: 44px;
+        font-size: 34px;
         font-weight: 400;
     }
+    .header-text h1 br {
+        display: none;
+    }
     .header-text p {
-        font-size: 14px;
+        font-size: 14px !important;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+    .header-text p br {
+        display: none;
     }
  }
  
@@ -77,14 +93,14 @@ nav .btn {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 100px auto;
+    margin: 32px auto;
 }
 
 
 
 .cta-form form input {
     width: 100%;
-    padding: 14px 20px;
+    padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid grey;
     border-radius: 40px;
@@ -101,12 +117,13 @@ nav .btn {
 
 .cta-form form button {
     font-size: 20px;
+    background: #25DAC5;
     color: #FFFFFF;
     font-weight: 700;
     outline: none;
     border: none;
     border-radius: 40px;
-    padding: 14px 28px;
+    padding: 12px 28px;
     text-align: center;
     text-decoration: none;
 
@@ -125,7 +142,7 @@ nav .btn {
 
     .cta-form form button {
         margin: 40px auto;
-        padding: 10px 28px;
+        /* padding: 10px 28px; */
 
     }
 }
@@ -133,8 +150,7 @@ nav .btn {
     display: block;
     text-align: center;
     font-family: Poppins;
-    top: 40px;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFFFFF;
     opacity: 30%;
     letter-spacing: 2px;
